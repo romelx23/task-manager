@@ -17,6 +17,7 @@ export const UpdateButton = ({ task }: UpdateButtonProps) => {
 
     const handleUpdate = async () => {
         await updateTask(updatedTask);
+        setOpen(false);
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
